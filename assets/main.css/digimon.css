@@ -14,3 +14,10 @@
 #img {
     margin-top: 13px;
 }
+
+.abs-center {
+    display: flex;
+    align-items: 500%;
+    justify-content: 100%;
+   
+  }

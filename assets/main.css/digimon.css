@@ -5,6 +5,11 @@
     padding: 28px;
 }
 
+nav{
+    background-color:#ffc107;;
+
+}
+
 #click {
     color:beige;
     padding: 43px;
@@ -15,9 +20,15 @@
     margin-top: 13px;
 }
 
-.abs-center {
-    display: flex;
-    align-items: 500%;
-    justify-content: 100%;
-   
+#fuente {
+    font-family: "Bungee Spice";
+    font-weight: 400;
+    font-style: normal;
+    color: #ffc107;
   }
+  
+ body {
+    background-color: black;
+ }
+ 
+ 

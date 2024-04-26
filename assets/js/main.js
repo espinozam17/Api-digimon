@@ -7,18 +7,17 @@ function consultar() {
       $("#contenedor").html("");
       for (const digimon of listadoDigimons) {
         $("#contenedor").append(`
-          
           <div class="col mt-2 mb-2">
             <div class="card">
               <img src="${digimon.img}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">${digimon.name}</h5>
-              <p class="card-text">${digimon.level}</p>
+              <div class="card-body">
+                <h5 class="card-title">${digimon.name}</h5>
+                <p class="card-text">${digimon.level}</p>
+              </div>
             </div>
-          </div>
-          
           </div>`);
       }
+      $("#contenedor").show(); // Mostrar el contenedor después de cargar los digimons
     });
 }
 
@@ -43,6 +42,7 @@ function consultarNombre(nombre) {
           
           </div>`);
       }
+      $("#contenedor").show(); // Mostrar el contenedor después de cargar los digimons
     });
 }
 
@@ -67,10 +67,15 @@ function verNivel(nivel) {
           </div>
           `);
       }
+      $("#contenedor").show(); // Mostrar el contenedor después de cargar los digimons
     });
 }
 
+
 $(document).ready(function () {
+  // Ocultar el contenedor al principio
+  $("#contenedor").hide();
+
   $(document).on("click", "#btn-mostrar", function () {
     consultar();
   });
